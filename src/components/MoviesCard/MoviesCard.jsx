@@ -18,7 +18,7 @@ export default function MoviesCard({name, duration, src, trailerLink}) {
     <li className="movies-card">
       <article className="movies-card__container">
         <Link to={trailerLink} target="_blank">
-          <img className="movies-card__image" src={src} alt="#" />
+          <img className="movies-card__image" src={src} alt={name} />
         </Link>
         <div className="movies-card__wrapper">
           <div className="movies-card__inner-wrapper">

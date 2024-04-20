@@ -38,6 +38,10 @@
   box-sizing: border-box;
 }
 
+.search-form__form:focus-within {
+  border-color: #4285F4;
+}
+
 @media screen and (max-width: 768px) {
   .search-form__form {
     margin-top: 81px;

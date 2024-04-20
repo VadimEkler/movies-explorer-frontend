@@ -20,7 +20,7 @@ export default function Input({ pathname, title, name, type, minLength, maxLengt
           <span className={`profile__error ${name === 'name' ? 'profile__error_type_name' : ''}`}>{error}</span>
         </label>
         :
-        <label className='auth__input-container'>
+        <label className='auth-form__input-container'>
           <p className='auth-form__subtitle'>{title}</p>
           <input
             required

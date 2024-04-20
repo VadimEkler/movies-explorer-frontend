@@ -71,12 +71,20 @@
 
 .auth-form__link {
   all: unset;
+  font-size: 14px;
+  line-height: 1.21;
   color: #4285F4;
   transition: opacity 0.2s;
 }
 
 @media screen and (max-width: 460px) {
   .auth-form__text {
+    font-size: 12px;
+  } 
+}
+
+@media screen and (max-width: 460px) {
+  .auth-form__link {
     font-size: 12px;
   } 
 }

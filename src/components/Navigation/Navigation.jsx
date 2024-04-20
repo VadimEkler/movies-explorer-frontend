@@ -27,7 +27,7 @@ function Navigation({ pathname, loggedIn }) {
     <>
       { loggedIn ?
       <>
-        <nav className={`navigation ${isOpen ? "navigation__open" : ''}`}>
+        <nav className={`navigation ${isOpen ? "navigation_type_open" : ''}`}>
             <ul className="navigation__wrapper navigation__wrapper-mobile-menu">
               <li>
                 <Link
@@ -53,16 +53,16 @@ function Navigation({ pathname, loggedIn }) {
               <li>
                 <Link to='/profile' className='navigation__account-wrapper navigation__link' onClick={clickEndpoint}>
                   <span className="navigation__auth-text navigation__account">Аккаунт</span>
-                  <div className="navigation__account-icon"></div>
+                  <div className={`navigation__account-icon ${pathname === '/' ? 'navigation__account-icon_type_main' : ''}`}></div>
                 </Link>
               </li>
             </ul>
             <button className="navigation__close-menu-button" type="button" onClick={handleClick}></button>
           </nav>
-          <button className="navigation__menu" type="button" onClick={handleClick}></button>
+          <button className="navigation-menu" type="button" onClick={handleClick}></button>
         </>
         :
-        <nav>
+        <nav className="navigation navigation_type_unauth">
           <ul className="navigation__wrapper navigation__wrapper_type_unauth">
             <li>
               <Link to='/signup' className="navigation__unauth-text">Регистрация</Link>

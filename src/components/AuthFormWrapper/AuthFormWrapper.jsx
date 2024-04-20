@@ -14,9 +14,9 @@ export default function AuthFormWrapper({ name, children, isValid, onSubmit }) {
         </Form>
         {
           name === 'signin' ?
-            <p className='auth-form__text'>Ещё не зарегистрированы? <Link to={'/signup'} className='auth-form__text auth-form__link'>Регистрация</Link></p>
+            <p className='auth-form__text'>Ещё не зарегистрированы? <Link to={'/signup'} className='auth-form__link'>Регистрация</Link></p>
           : name === 'signup' ?
-            <p className='auth-form__text'>Уже зарегистрированы? <Link to={'/signin'} className='auth-form__text auth-form__link'>Войти</Link></p>
+            <p className='auth-form__text'>Уже зарегистрированы? <Link to={'/signin'} className='auth-form__link'>Войти</Link></p>
           :
             <Link to={'/'}>Выйти из аккаунта</Link>
         }
