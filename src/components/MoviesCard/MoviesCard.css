@@ -1,0 +1,115 @@
+.movies-card {
+  all: unset;
+  margin: 0 auto;
+  min-height: 218px;
+  background-color: var(--main-color);
+}
+
+@media screen and (max-width: 768px) {
+  .movies-card {
+    min-height: 257px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .movies-card {
+    min-height: 235px;
+  }
+}
+
+.movies-card__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+  box-shadow: 0px 16px 24px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.movies-card__image {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1160px) {
+  .movies-card__image {
+    width: 300px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .movies-card__image {
+    width: 339px;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .movies-card__image {
+    width: 280px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .movies-card__image {
+    width: 300px;
+    height: 168px;
+  }
+}
+
+.movies-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 11px 12px;
+  gap: 11px;
+}
+
+.movies-card__inner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movies-card__name {
+  all: unset;
+  font-size: 13px;
+}
+
+.movies-card__button {
+  all: unset;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.09);
+  transition: background-color 0.3s, opacity 0.2s;
+}
+
+.movies-card__button_type_save {
+  background-color: #313131;
+}
+
+.movies-card__button_type_active {
+  background-color: #2BE080;
+}
+
+.movies-card__button_type_delete {
+  background-image: url('../../images/icons/movies-card__delete-button.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.movies-card__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.movies-card__duration {
+  color: var(--secondary-font-color);
+  font-size: 11px;
+  line-height: 1.21;
+}
