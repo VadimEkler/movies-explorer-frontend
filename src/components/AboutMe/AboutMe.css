@@ -1,0 +1,178 @@
+.about-me {
+  margin: 0 auto; 
+  min-height: 554px;
+  background-color: var(--main-color);
+}
+
+.about-me__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 70px;
+}
+
+@media screen and (max-width: 960px) {
+  .about-me__container {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about-me__container {
+    margin: 0 14px;
+  }
+}
+
+.about-me__title {
+  all: unset;
+  font-size: 22px;
+  padding-bottom: 23px;
+  border-bottom: solid 1px;
+  box-sizing: border-box;
+  margin-top: 110px;
+  letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 960px) {
+  .about-me__title {
+    margin-top: 91px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about-me__title {
+    font-size: 18px;
+    margin-top: 65px;
+    padding-bottom: 27px;
+  }
+}
+
+.about-me__wrapper {
+  margin-top: 66px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  height: max-content;
+}
+
+@media screen and (max-width: 540px) {
+  .about-me__wrapper {
+    margin-top: 60px;
+    flex-direction: column-reverse;
+  }
+}
+
+.about-me__wrapper-description {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.about-me__name {
+  all: unset;
+  line-height: 1.16;
+  font-size: 50px;
+  letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 960px) {
+  .about-me__name {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about-me__name {
+    font-size: 30px;
+    line-height: 1.21;
+  }
+}
+
+.about-me__info {
+  all: unset;
+  margin-top: 18px;
+  line-height: 1.11;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 960px) {
+  .about-me__info {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about-me__info {
+    margin-top: 21px;
+    font-size: 11px;
+    line-height: 1.45;
+  }
+}
+
+.about-me__meeting {
+  all: unset;
+  margin-top: 26px;
+  line-height: 1.57;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+  .about-me__meeting {
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about-me__meeting {
+    margin-top: 20px;
+    line-height: 1.45;
+    font-size: 11px;
+  }
+}
+
+.about-me__link {
+  all: unset;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .about-me__link {
+    margin-top: 88px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about-me__link {
+    margin-top: 40px;
+  }
+}
+
+.about-me__photo {
+  width: 270px;
+  height: 327px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 960px) {
+  .about-me__photo {
+    width: 255px;
+    height: 307px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about-me__photo {
+    width: 292px;
+    height: 352px;
+    align-self: center;
+  }
+}
